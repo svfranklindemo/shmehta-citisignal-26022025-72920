@@ -72,7 +72,7 @@ export default async function decorate(block) {
     console.error(error);
   } finally {
     if (!isAemAuthor) {
-      //block.closest('.enrichment-wrapper')?.remove();
+      block.closest('.enrichment-wrapper')?.remove();
     }
   }
 }
